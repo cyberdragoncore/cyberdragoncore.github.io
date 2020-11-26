@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Ubuntu | CyberDragonCore的博客</title>
+<title>心理健康课复习笔记 | CyberDragonCore的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -11,6 +11,12 @@
 <link rel="shortcut icon" href="https://cyberdragoncore.github.io/favicon.ico?v=1606403225514">
 <link rel="stylesheet" href="https://cyberdragoncore.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,7 +33,15 @@
 </script>
 
 
-    <meta name="description" content="我的学习分享">
+    <meta name="description" content="心理健康的复习笔记
+
+第一章
+第一节
+人是一种关系的存在物，人的一生中无论是肉体还是精神，都表现为一种关系的生成与发展，这点决定了人与其他动物的区别。
+
+人际关系的外延包括朋友关系、夫妻关系、亲子关系、同事关系、师生关系
+美国心理学家马斯洛..." />
+    <meta name="keywords" content="笔记" />
   </head>
   <body>
     <div id="app" class="main">
@@ -105,34 +119,44 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Ubuntu</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://cyberdragoncore.github.io/post/wo-de-dian-nao-she-zhi/">
-                  <h2 class="post-title">我的电脑设置（一）</h2>
-                </a>
-                <div class="post-date">
-                  2020-11-26
-                </div>
-                <div class="post-abstract">
-                  <p>最近又重新给电脑安装了 Ubuntu 系统。之前用了 Manjaro 、 Arch ，发现 Ubuntu 虽然不够简洁但是省啊！用 Ubuntu 的时候不用那么麻烦的设置太多东西，软件的兼容性也比较好。可以做到安装即可使用，尽快的投入工作中。不过还是有一些系统需要设置一下，我这里把一些基本的设置都记录下来以便以后使用。</p>
+          <div class="post-detail">
+            <h2 class="post-title">心理健康课复习笔记</h2>
+            <div class="post-date">2020-11-26</div>
+            
+            <div class="post-content" v-pre>
+              <p>心理健康的复习笔记</p>
+<!-- more -->
+<h1 id="第一章">第一章</h1>
+<h2 id="第一节">第一节</h2>
+<p>人是一种关系的存在物，人的一生中无论是肉体还是精神，都表现为一种关系的生成与发展，这点决定了人与其他动物的区别。</p>
+<ul>
+<li>人际关系的外延包括朋友关系、夫妻关系、亲子关系、同事关系、师生关系</li>
+<li>美国心理学家马斯洛把人的需求分为生理需求、安全需求、社交需求、尊重需求、自我实现需求</li>
+<li>通常人们会在意他人的首次交往时的印象</li>
+<li>人际交往的 “4A 法则 ” 包括接受（ Acceptance ）、赞赏（ Approval ）、</li>
+</ul>
 
-                </div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://cyberdragoncore.github.io/tag/wVyaIS5Eg/" class="tag">
+                    笔记
+                  </a>
+                
               </div>
-              
-                <a class="right" href="https://cyberdragoncore.github.io/post/wo-de-dian-nao-she-zhi/">
-                  <div class="feature-container" style="background-image: url('https://cyberdragoncore.github.io/post-images/wo-de-dian-nao-she-zhi.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -158,6 +182,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '061060c88505c1a226c7',
+        clientSecret: '4eec95bda37553f9167f1afb25797d960b6563b1',
+        repo: 'cyberdragoncore.github.io',
+        owner: 'cyberdragoncore',
+        admin: ['cyberdragoncore'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
