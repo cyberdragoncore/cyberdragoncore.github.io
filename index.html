@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML>
 <!--
-	Lens by HTML5 UP
+	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -15,49 +15,39 @@
 <base href="https://cyberdragoncore.github.io/">
 <link rel="shortcut icon" href="favicon.ico" />
 
-<link rel="stylesheet" href="media/css/main-lens.css" />
-<noscript><link rel="stylesheet" href="media/css/noscript-lens.css" /></noscript>
+<link rel="stylesheet" href="media/css/main-multiverse.css" />
+<link rel="stylesheet" href="media/css/modify-multiverse.css" />
+<noscript><link rel="stylesheet" href="media/css/noscript-multiverse.css" /></noscript>
 
 
 
 </head>
-<body class="is-preload-0 is-preload-1 is-preload-2">
+<body class="is-preload">
 
 <!-- 外封 -->
-<div id="main">
+<div id="wrapper">
 
     <!-- 页眉 -->
     <header id="header">
     
-    <h1>CyberDragonCore的博客</h1>
-    <p>我的学习分享</p>
-    <ul class="icons">
-        
+    <h1><strong>CyberDragonCore的博客</strong> 由 <a href="https://html5up.net">HTML5 UP</a> 设计样式。</h1>
+    <nav>
+        <ul>
             
-            <li><a href="https://github.com/cyberdragoncore" class="icon brands fa-github"><span class="label">github</span></a></li>
             
-        
-            
-        
-            
-        
-            
-            <li><a href="https://www.zhihu.com/people/cyberdragoncore" class="icon brands fa-zhihu"><span class="label">zhihu</span></a></li>
-            
-        
-            
-        
-    </ul>
+            <li><a href="#footer" class="icon solid fa-info-circle">关于</a></li>
+        </ul>
+    </nav>
     
 </header>
 
     <!-- 主要内容 -->
     
-<section id="thumbnails">
+<main id="main">
     
-        <article>
+    <article class="thumb">
         
-        <a class="thumbnail" href="https://cyberdragoncore.github.io/post-images/wo-de-dian-nao-she-zhi.jpg"><img src="https://cyberdragoncore.github.io/post-images/wo-de-dian-nao-she-zhi.jpg" alt="" /></a>
+            <a href="https://cyberdragoncore.github.io/post-images/wo-de-dian-nao-she-zhi.jpg" class="image"><img src="https://cyberdragoncore.github.io/post-images/wo-de-dian-nao-she-zhi.jpg" /></a>
         
         <h2>我的电脑设置（一）</h2>
         <p>最近又重新给电脑安装了 Ubuntu 系统。之前用了 Manjaro 、 Arch ，发现 Ubuntu 虽然不够简洁但是省啊！用 Ubuntu 的时候不用那么麻烦的设置太多东西，软件的兼容性也比较好。可以做到安装即可使用，尽快的投入工作中。不过还是有一些系统需要设置一下，我这里把一些基本的设置都记录下来以便以后使用。</p>
@@ -89,9 +79,9 @@
 
     </article>
     
-        <article>
+    <article class="thumb">
         
-        <a class="thumbnail" href="https://cyberdragoncore.github.io/post-images/hello-gridea.png"><img src="https://cyberdragoncore.github.io/post-images/hello-gridea.png" alt="" /></a>
+            <a href="https://cyberdragoncore.github.io/post-images/hello-gridea.png" class="image"><img src="https://cyberdragoncore.github.io/post-images/hello-gridea.png" /></a>
         
         <h2>Hello Gridea</h2>
         <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
@@ -118,20 +108,42 @@
 
     </article>
     
-</section>
+</main>
 
 
     <!-- 页脚 -->
     
-<footer id="footer" >
+<footer id="footer" class="panel">
     
-    <ul class="icons">
-        
-        
-    </ul>
-    <ul class="copyright">
-        <li>CyberDragonCore的博客</li><li> 由 <a href="https://html5up.net">HTML5 UP</a> 设计样式。</li>
-    </ul>
+    <div class="inner split">
+        <div>
+            <section>
+                <h2>关于</h2>
+                <p>我的学习分享</p>
+            </section>
+            <section>
+                <h2>求订阅我的...</h2>
+                <ul class="icons">
+                    
+                        
+                            <li><a href="https://github.com/cyberdragoncore" class="icon brands fa-github"><span class="label">github</span></a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li><a href="https://www.zhihu.com/people/cyberdragoncore" class="icon brands fa-zhihu"><span class="label">zhihu</span></a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </section>
+            <p class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+        </div>
+    </div>
     
 </footer>
 
@@ -141,9 +153,11 @@
 <!-- 脚本 -->
 
 <script src="media/scripts/jquery.min.js"></script>
+<script src="media/scripts/jquery.poptrox.min.js"></script>
 <script src="media/scripts/browser.min.js"></script>
 <script src="media/scripts/breakpoints.min.js"></script>
-<script src="media/scripts/main-lens.js"></script>
+<script src="media/scripts/util-multiverse.js"></script>
+<script src="media/scripts/main-multiverse.js"></script>
 
 
 </body>
