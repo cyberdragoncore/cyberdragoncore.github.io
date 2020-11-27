@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberdragoncore.github.io</id>
     <title>CyberDragonCore的博客</title>
-    <updated>2020-11-27T00:56:24.980Z</updated>
+    <updated>2020-11-27T01:44:38.785Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberdragoncore.github.io"/>
     <link rel="self" href="https://cyberdragoncore.github.io/atom.xml"/>
@@ -28,7 +28,7 @@
 <li>Google-Chrome 这可能是最好的浏览器。</li>
 <li>Brave-Browser 在 Chrome 的基础上设计的保护隐私的浏览器。</li>
 <li>Firefox 感觉现在的 Firefox 没什么特别的地方了，可能就是隐私保护不错吧。不够还是偶尔试试看一些网页的兼容性。</li>
-<li>Microsoft-Edge 国内用的话可以比较方便的和手机同步数据。不够微软才推出 Dev 版，现在的 Dev 版还不能登陆帐号。可能要等正式版发布才能真正用上了。</li>
+<li>Microsoft-Edge 国内用的话可以比较方便的和手机同步数据。不过微软才推出 Dev 版，现在的 Dev 版还不能登陆帐号。可能要等正式版发布才能真正用上了。</li>
 <li>Visual-Studio-Code 现在流行的文本编辑器之一，自带一堆程序员喜欢的工具。用起来很赞。</li>
 <li>Geary 比较好看的邮件软件。管理邮件的时候看起来比较舒心。</li>
 <li>Dolphin 这是 KDE 桌面的一个文件管理器， Ubuntu 默认的是 Gnome 桌面。感觉 Gnome 桌面的文件管理器功能不如这个强。</li>
