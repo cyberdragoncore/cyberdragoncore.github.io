@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberdragoncore.github.io</id>
     <title>CyberDragonCore的博客</title>
-    <updated>2020-12-06T15:17:18.786Z</updated>
+    <updated>2020-12-23T13:03:39.057Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberdragoncore.github.io"/>
     <link rel="self" href="https://cyberdragoncore.github.io/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://cyberdragoncore.github.io/images/avatar.png</logo>
     <icon>https://cyberdragoncore.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CyberDragonCore的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[自己使用的几个 RSS 订阅源]]></title>
+        <id>https://cyberdragoncore.github.io/post/zi-ji-shi-yong-de-ji-ge-rss-ding-yue-yuan/</id>
+        <link href="https://cyberdragoncore.github.io/post/zi-ji-shi-yong-de-ji-ge-rss-ding-yue-yuan/">
+        </link>
+        <updated>2020-12-23T12:45:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>之前我说了一下自己喜欢用 RSS 的<a href="https://cyberdragoncore.github.io/post/zhe-ge-shi-dai-huan-you-ren-yong-rss-ma/">原因</a>。</p>
+<p>今天把自己常用的几个 RSS 订阅源分享一下。<br>
+我平时都喜欢一些科技方面的资讯，所以订阅了很多很这方面的内容。这里把我觉得不错的内容分享一下。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>之前我说了一下自己喜欢用 RSS 的<a href="https://cyberdragoncore.github.io/post/zhe-ge-shi-dai-huan-you-ren-yong-rss-ma/">原因</a>。</p>
+<p>今天把自己常用的几个 RSS 订阅源分享一下。<br>
+我平时都喜欢一些科技方面的资讯，所以订阅了很多很这方面的内容。这里把我觉得不错的内容分享一下。</p>
+<!-- more -->
+<p><strong>少数派</strong>  优秀的极客资讯网站。订阅地址 https://sspai.com/feed</p>
+<p><strong>Wired</strong>  著名资讯网站。好像每个月只可以免费看5篇文章。订阅地址 https://www.wired.com/about/rss_feeds/</p>
+<p><strong>NASA</strong>  每天看一些天文渲染图，假装自己是个天文爱好者。订阅地址 https://www.nasa.gov/content/nasa-rss-feeds</p>
+<p><strong>环球科学</strong>  看一些科普文章装作自己很爱学习。订阅地址 https://feedx.net/rss/huanqiukexue.xml</p>
+<p><strong>Solidot</strong>  著名的互联网资讯网站。内容很简短但是很及时。订阅地址 http://solidot.org/index.rss</p>
+<p><strong>知乎每日精选</strong>  偶尔看看知乎上的一些科普文章。订阅地址 https://www.zhihu.com/rss</p>
+<p><strong>[ i D 公 社 ]</strong>  一个设计网站。内容非常有用，文章通俗易懂。订阅地址 http://feeds.feedburner.com/ID</p>
+<p><strong>书伴</strong>  分享书籍和 Kindle 使用体验的网站。订阅地址 https://feeds.feedburner.com/bookfere</p>
+<p>如果还有什么网站比较喜欢但是网站不支持 RSS 订阅的话，可以看看这几个提供订阅服务的网站。在这上面找找看有没有你想要的 RSS 订阅源。</p>
+<p><strong>RSSHub</strong></p>
+<p>提供很多网站的订阅地址，包括 bilibili 、知乎等网站。感觉这个网站超赞。网站地址 https://docs.rsshub.app/</p>
+<p><strong>微文库</strong></p>
+<p>提供微信公众号的订阅。网站地址 https://www.wxwenku.com/</p>
+<p><strong>FeedX</strong></p>
+<p>提供很多新闻网站的 RSS 订阅。网站地址 https://feedx.net/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[这个时代还有人用 RSS 吗？]]></title>
         <id>https://cyberdragoncore.github.io/post/zhe-ge-shi-dai-huan-you-ren-yong-rss-ma/</id>
