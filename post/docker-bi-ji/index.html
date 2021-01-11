@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Docker 笔记 | CyberDragonCore的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://cyberdragoncore.github.io/favicon.ico?v=1610381192533">
+<link rel="stylesheet" href="https://cyberdragoncore.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=254168098"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '254168098');
+</script>
+
+
+    <meta name="description" content="我在使用 Linux 的过程中发现很多软件都被人们用 Docker 打包好了，据说这样可以省去很多配置软件和软件依赖的时间。不过因为我不会用 Docker 所以一直没尝试过。直到前段时间才学习了一下怎么使用 Docker ，这里是我学习记录..." />
+    <meta name="keywords" content="Docker,笔记,Linux" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://cyberdragoncore.github.io">
+        <img src="https://cyberdragoncore.github.io/images/avatar.png?v=1610381192533" class="site-logo">
+        <h1 class="site-title">CyberDragonCore的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/cyberdragoncore" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/cyberdragoncore" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我的学习分享
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://cyberdragoncore.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Docker 笔记</h2>
+            <div class="post-date">2021-01-11</div>
+            
+              <div class="feature-container" style="background-image: url('https://cyberdragoncore.github.io/post-images/docker-bi-ji.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>我在使用 Linux 的过程中发现很多软件都被人们用 Docker 打包好了，据说这样可以省去很多配置软件和软件依赖的时间。不过因为我不会用 Docker 所以一直没尝试过。直到前段时间才学习了一下怎么使用 Docker ，这里是我学习记录的笔记。</p>
+<!-- more -->
+<p>Docker 是一种为了解决 Linux 上的软件依赖而发明的技术。我在很久之前就听说了，也遇到了很多使用 Docker 部署的软件。不过最近才学习怎么使用。不同的 Linux 发行版安装 Docker 的方法有一些不同，建议大家参考官方手册之后自己安装。</p>
+<p>安装好了之后可以开始执行</p>
+<pre><code class="language-sh">$docker run hello-world
+</code></pre>
+<p>这时软件会检查本地有没有镜像文件，如果没有就从镜像文件的仓库里面下载下来。下载之后再根据这个镜像文件生成容器文件并运行容器。这时输入</p>
+<pre><code class="language-sh">$docker container ls
+</code></pre>
+<p>可以查看正在运行的容器。注意列出的容器的 ID ，因为很多操作都需要使用容器的 ID 。比如终止容器运行就使用</p>
+<pre><code class="language-sh">$docker container kill [容器的 ID]
+</code></pre>
+<p>终止容器运行之后如果要重新启动这个容器则使用</p>
+<pre><code class="language-sh">$docker container start [容器的 ID]
+</code></pre>
+<p>如果要完全删除容器的文件则使用</p>
+<pre><code class="language-sh">$docker container rm [容器的 ID]
+</code></pre>
+<p>当然终止容器还可以用这个命令</p>
+<pre><code class="language-sh">$docker container stop [容器的 ID]
+</code></pre>
+<p>介绍几个基本概念。在 Docker 中的镜像、容器都是文件。镜像就像是一个模板，容器则是根据模板生成的实际使用的文件。镜像中包含软件运行所需要的各种文件，容器不仅包含这些运行依赖的文件还有各种运行产生的数据。Docker 还有各种命令可以帮助你创建自己的镜像，并且有一个网站存储各种公开的镜像。存储镜像的网站就是 Docker 的镜像仓库，如果你创建了一个镜像也可以发布到这个仓库中。 Docker 的镜像大多数都可以在 Docker 的镜像仓库中找到。如果你想使用一个镜像，下载镜像的命令是</p>
+<pre><code class="language-sh">$docker pull [用户名]/[镜像名]:[版本]
+</code></pre>
+<p>不过， Docker 默认使用官方镜像仓库。在国内这个仓库的访问速度感人。推荐大家使用各种镜像网站访问。比如像这样使用百度的镜像网站</p>
+<pre><code class="language-sh">$docker pull mirror.baidubce.com/[用户名]/[镜像名]:[版本]
+</code></pre>
+<p>想要根据下载的镜像生成容器，可以使用</p>
+<pre><code class="language-sh">$docker container run [镜像的名字]
+</code></pre>
+<p>如果想看容器里面的输出信息，可以使用</p>
+<pre><code class="language-sh">$docker container logs [容器的 ID]
+</code></pre>
+<p>查看所有的容器，使用的命令是</p>
+<pre><code class="language-sh">$docker container ls --all
+</code></pre>
+<p>这样就会列出所有的容器 ID ，包括了已经停止运行的容器的 ID。</p>
+<p>Docker 的命令中还有一些常用的参数，这里举一些例子。</p>
+<pre><code class="language-sh"># -it 这个参数会让你的终端的内容传给容器中执行
+$docker container run -it [镜像] 
+# -p 这个参数会将容器中的端口映射到本地计算机
+$docker container run -p 本地端口:容器端口 [镜像]
+# --rm 这个参数使容器停止之后被自动删除
+$docker container run --rm [镜像]
+# 在容器后面加上一条命令，这条加上的命令会在容器启动后自动执行
+$docker container run [镜像] 命令
+</code></pre>
+<p>这些都是基本的一些命令，不过对于普通使用来说已经完全足够了。只要搞清楚了 Docker 的基本设计逻辑，想要上手使用还是很容易的。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://cyberdragoncore.github.io/tag/UEZOLTDst/" class="tag">
+                    Docker
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/wVyaIS5Eg/" class="tag">
+                    笔记
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/A1uNwfx1m3/" class="tag">
+                    Linux
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cyberdragoncore.github.io/post/zi-ji-shi-yong-de-ji-ge-rss-ding-yue-yuan/">
+                  <h3 class="post-title">
+                    自己使用的几个 RSS 订阅源
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '061060c88505c1a226c7',
+        clientSecret: '4eec95bda37553f9167f1afb25797d960b6563b1',
+        repo: 'cyberdragoncore.github.io',
+        owner: 'cyberdragoncore',
+        admin: ['cyberdragoncore'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
