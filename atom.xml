@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberdragoncore.github.io</id>
     <title>CyberDragonCore的博客</title>
-    <updated>2021-01-11T16:07:42.374Z</updated>
+    <updated>2021-05-04T05:15:38.435Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberdragoncore.github.io"/>
     <link rel="self" href="https://cyberdragoncore.github.io/atom.xml"/>
@@ -10,6 +10,46 @@
     <logo>https://cyberdragoncore.github.io/images/avatar.png</logo>
     <icon>https://cyberdragoncore.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, CyberDragonCore的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[文石 Nova 3 Color 使用体验]]></title>
+        <id>https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/</id>
+        <link href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
+        </link>
+        <updated>2021-05-03T08:01:01.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近购买了文石 Nova 3 Color ，2780元的售价感觉还是太高了。不过使用体验非常不错，这里分享一些自己使用的经验。当然我不建议普通人购买，除非你非常喜欢阅读。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近购买了文石 Nova 3 Color ，2780元的售价感觉还是太高了。不过使用体验非常不错，这里分享一些自己使用的经验。当然我不建议普通人购买，除非你非常喜欢阅读。</p>
+<!-- more -->
+<p>之前发了几个关于 Nova 3 Color 的视频，给大家展示了 Nova 3 Color 的刷新速度和残影的问题。</p>
+<iframe src="//player.bilibili.com/player.html?aid=972266007&bvid=BV1Lp4y1a7EP&cid=317632291&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=247319420&bvid=BV1Hv41187i8&cid=317635394&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>视频中可以明显看到电子阅读器的刷新速度是非常慢的，而且还有严重的残影。看视频、打游戏的话体验会非常糟糕。即便是看漫画也会因为残影而影响到体验。浏览网页的时候，滑动的残影和刷新速度让人感觉非常不适。</p>
+<figure data-type="image" tabindex="1"><img src="https://cyberdragoncore.github.io/post-images/1620105043400.webp" alt="使用中底部出现的残影" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://cyberdragoncore.github.io/post-images/1620105055947.webp" alt="使用中顶部出现的残影" loading="lazy"></figure>
+<p>不过这款电子阅读器还是满足了自己的大多数需求的。毕竟我主要还是用它来看电子书。有了这款电子阅读器之后自己替换掉了使用近三年的 Kindle 。</p>
+<p>拿到手上的时候感觉比自己以前一直在用的 Kindle 558 入门款重了不少，单手握持的时候体验有一些不好。当然这个的屏幕是比自己之前的 Kindle 电子阅读器更大，而且设计上也更美观。自己换掉 Kindle 第8代入门款的原因之一就是 Kindle 比较封闭而且性能也不够强。自己平时喜欢看一些博客或者网络上的漫画，而 Kindle 自带的浏览器只能浏览一些简单的网页，很多网页的浏览体验都不好。这款文石的 Nova 3 Color 使用的是开放的 Android 10 ，非常符合自己的需要。而且 Nova 3 Color 的性能也非常强，日常使用完全足够了。自己之前也在纠结要不要买海信推出的 A7 CC 。但是考虑到 A7 CC 的屏幕不够大，还是觉得买大屏幕的 Nova 3 Color 阅读体验应该会更好一些。</p>
+<figure data-type="image" tabindex="3"><img src="https://cyberdragoncore.github.io/post-images/1620105068125.webp" alt="Nova 3 Color 自带的浏览器" loading="lazy"></figure>
+<p>阅读器自带的应用都有针对墨水屏的优化，使用体验很不错。自带的这个浏览器应该是基于 Chromium 的吧，设计上也可以。有针对一些网络文章提供阅读模式，应该是考虑了大家读网络小说的需求。阅读器自带了一个图书商城，不过我从应用商店里面下载了 Kindle 阅读所以没有使用过这个商城。自己平时就主要是使用 Kindle 阅读看书，此外就是使用 Flym RSS 阅读器订阅网上的新闻。个人感觉墨水屏的刷新速度和残影真的比较影响阅读体验，如果是看漫画或者看某些网页的话的确会不适宜。</p>
+<p>个人使用 Nova 3 Color 的感受还是很不错的，但是这款产品终究是小众产品不推荐大家盲目购买。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[读书分享——刻意练习]]></title>
+        <id>https://cyberdragoncore.github.io/post/du-shu-fen-xiang-ke-yi-lian-xi/</id>
+        <link href="https://cyberdragoncore.github.io/post/du-shu-fen-xiang-ke-yi-lian-xi/">
+        </link>
+        <updated>2021-01-17T13:28:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>之前我读了一本非常优秀的书——《刻意练习》。读完后的感想便是自己为什么没有早一点看到这本书。书中的内容如此重要，如果自己能早一点知道就好了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>之前我读了一本非常优秀的书——《刻意练习》。读完后的感想便是自己为什么没有早一点看到这本书。书中的内容如此重要，如果自己能早一点知道就好了。</p>
+<!-- more -->
+<p>《刻意练习：如何从新手到大师》这本书中告诉了大家几个常见的错误观点，还告诉了大家如何通过练习让自己成为大师级人物。<img src="https://cyberdragoncore.github.io/post-images/1610891279528.jpeg" alt="" loading="lazy"></p>
+<h2 id="天才来自刻意练习">天才来自刻意练习</h2>
+<p>大家应该都听说过天才来自努力，但是大家真的是这样认为的吗？估计很多人仍然认为天才是天生的，并且是常人无法超越的。因为仔细想想真的有很多人的成就就像是无法达到一样。很多人估计想过去练习跑步、练习弹吉他，但是自己的水平就是不能提高。很显然自己永远也达不到那些天才的水平，某些专业才华是天生的。</p>
+<h2 id="练习需要的基本条件">练习需要的基本条件</h2>
+<h2 id="如何练习">如何练习</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Docker 笔记]]></title>
         <id>https://cyberdragoncore.github.io/post/docker-bi-ji/</id>
