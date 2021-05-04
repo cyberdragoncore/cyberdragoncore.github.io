@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>BooxNova3Color | CyberDragonCore的博客</title>
+<title>Arduino 下载 ESP8266 开发板失败的问题 | CyberDragonCore的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -11,6 +11,12 @@
 <link rel="shortcut icon" href="https://cyberdragoncore.github.io/favicon.ico?v=1620112777629">
 <link rel="stylesheet" href="https://cyberdragoncore.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,7 +33,8 @@
 </script>
 
 
-    <meta name="description" content="我的学习分享">
+    <meta name="description" content="搞了两三天之后终于把ESP8266的资料下载好了。之前也试过换代理，但是每次下载ESP8266的时候都会报下载失败。本来我用Arduino是为了省心，结果搞得我特别累心。但是不知道怎么搞得后来又下载成功了，真是扯。不过问题还是网络的问题，说..." />
+    <meta name="keywords" content="Arduino,ESP8266,嵌入式" />
   </head>
   <body>
     <div id="app" class="main">
@@ -105,34 +112,56 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: BooxNova3Color</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
-                  <h2 class="post-title">文石 Nova 3 Color 使用体验</h2>
-                </a>
-                <div class="post-date">
-                  2021-05-03
-                </div>
-                <div class="post-abstract">
-                  <p>最近购买了文石 Nova 3 Color ，2780元的售价感觉还是太高了。不过使用体验非常不错，这里分享一些自己使用的经验。当然我不建议普通人购买，除非你非常喜欢阅读。</p>
-
-                </div>
+          <div class="post-detail">
+            <h2 class="post-title">Arduino 下载 ESP8266 开发板失败的问题</h2>
+            <div class="post-date">2021-05-04</div>
+            
+              <div class="feature-container" style="background-image: url('https://i0.hdslb.com/bfs/album/c21c146274c127a7137025f416e2fe68c907e565.jpg@518w.webp')">
               </div>
-              
-                <a class="right" href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
-                  <div class="feature-container" style="background-image: url('https://cyberdragoncore.github.io/post-images/wen-shi-nova-3-color-shi-yong-ti-yan.webp')">
-                  </div>
+            
+            <div class="post-content" v-pre>
+              <p>搞了两三天之后终于把ESP8266的资料下载好了。之前也试过换代理，但是每次下载ESP8266的时候都会报下载失败。本来我用Arduino是为了省心，结果搞得我特别累心。但是不知道怎么搞得后来又下载成功了，真是扯。不过问题还是网络的问题，说不定是网络突然又抽风了吧。</p>
+<!-- more -->
+<iframe src="//player.bilibili.com/player.html?aid=460468043&bvid=BV1H541137FP&cid=333397606&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=417990562&bvid=BV1LV411E7ZV&cid=333549071&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://cyberdragoncore.github.io/tag/YIo_b2VK2/" class="tag">
+                    Arduino
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/3ogXy7Iqty/" class="tag">
+                    ESP8266
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/WCDzfmgPcK/" class="tag">
+                    嵌入式
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
+                  <h3 class="post-title">
+                    文石 Nova 3 Color 使用体验
+                  </h3>
                 </a>
-              
-            </article>
-          
+              </div>
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -158,6 +187,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '061060c88505c1a226c7',
+        clientSecret: '4eec95bda37553f9167f1afb25797d960b6563b1',
+        repo: 'cyberdragoncore.github.io',
+        owner: 'cyberdragoncore',
+        admin: ['cyberdragoncore'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
