@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberdragoncore.github.io</id>
     <title>CyberDragonCore的博客</title>
-    <updated>2021-08-10T13:02:59.630Z</updated>
+    <updated>2021-08-10T13:08:53.653Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberdragoncore.github.io"/>
     <link rel="self" href="https://cyberdragoncore.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://cyberdragoncore.github.io/post/toxchat/">
         </link>
         <updated>2021-08-10T13:00:25.000Z</updated>
-        <content type="html"><![CDATA[<p>我的 Tox ID 平时很少在线，主要是晚上偶尔在线。 <img src="https://cyberdragoncore.github.io/post-images/1628600472415.png" alt="" loading="lazy"><br>
+        <content type="html"><![CDATA[<p>这是我的 Tox ID ，我平时很少在线，主要是晚上偶尔在线。<br>
+Tox的相关内容请看官网和维基百科<br>
+https://tox.chat/<br>
+https://zh.wikipedia.org/zh-hans/Tox<br>
+<img src="https://cyberdragoncore.github.io/post-images/1628600472415.png" alt="" loading="lazy"><br>
 <code>8117D964667C45B29F2D515266D2289702A904EA9456D7F07B831C598F2C583846F5F6F3BEAA</code></p>
 ]]></content>
     </entry>
