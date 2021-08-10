@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>电子阅读器 | CyberDragonCore的博客</title>
+<title>刚才给我的博客加上了 Google Analytics  | CyberDragonCore的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -11,6 +11,12 @@
 <link rel="shortcut icon" href="https://cyberdragoncore.github.io/favicon.ico?v=1628602361652">
 <link rel="stylesheet" href="https://cyberdragoncore.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,7 +33,8 @@
 </script>
 
 
-    <meta name="description" content="我的学习分享">
+    <meta name="description" content="自己第一次用 Google Analytics ，很多地方都不懂怎么弄。试了很久才搞定。中间遇到了不会的地方， Google 了也没有合适的答案。网上的答案讲的界面都不是现在的界面， Google 官方的介绍也不容易理解。我打算有空了出个详..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -105,34 +112,35 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 电子阅读器</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
-                  <h2 class="post-title">文石 Nova 3 Color 使用体验</h2>
-                </a>
-                <div class="post-date">
-                  2021-05-03
-                </div>
-                <div class="post-abstract">
-                  <p>最近购买了文石 Nova 3 Color ，2780元的售价感觉还是太高了。不过使用体验非常不错，这里分享一些自己使用的经验。当然我不建议普通人购买，除非你非常喜欢阅读。</p>
+          <div class="post-detail">
+            <h2 class="post-title">刚才给我的博客加上了 Google Analytics </h2>
+            <div class="post-date">2021-08-10</div>
+            
+            <div class="post-content" v-pre>
+              <p>自己第一次用 Google Analytics ，很多地方都不懂怎么弄。试了很久才搞定。中间遇到了不会的地方， Google 了也没有合适的答案。网上的答案讲的界面都不是现在的界面， Google 官方的介绍也不容易理解。我打算有空了出个详细教程。</p>
 
-                </div>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://cyberdragoncore.github.io/post/toxchat/">
+                  <h3 class="post-title">
+                    ToxChat
+                  </h3>
+                </a>
               </div>
-              
-                <a class="right" href="https://cyberdragoncore.github.io/post/wen-shi-nova-3-color-shi-yong-ti-yan/">
-                  <div class="feature-container" style="background-image: url('https://cyberdragoncore.github.io/post-images/wen-shi-nova-3-color-shi-yong-ti-yan.webp')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -158,6 +166,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '061060c88505c1a226c7',
+        clientSecret: '4eec95bda37553f9167f1afb25797d960b6563b1',
+        repo: 'cyberdragoncore.github.io',
+        owner: 'cyberdragoncore',
+        admin: ['cyberdragoncore'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
