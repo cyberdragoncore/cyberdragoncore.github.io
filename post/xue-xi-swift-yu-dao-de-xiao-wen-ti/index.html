@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Mac M1 芯片版使用 Brew 的基本教程 | CyberDragonCore的博客</title>
+<title>学习 Swift 遇到的小问题 | CyberDragonCore的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -33,12 +33,10 @@
 </script>
 
 
-    <meta name="description" content="之前听说在 Mac 上也有包管理器，于是我尝试了一下。其中发现了很多坑，在这里记录下来。
+    <meta name="description" content="最近在学习Swift，学习中我遇到了几个小问题。
 
-听说最好的包管理器是 Homebrew 。于是我访问了官网进行安装。官网网址是：https://brew.sh/
-官网上有安装的脚本
-$/bin/b..." />
-    <meta name="keywords" content="Mac,M1,Homebrew,Brew" />
+我找到一本《Swift基础教程》的书，正在按照书中的内容学习。这本书的内容很简洁易懂，很适合新手。但是可能由于书中演示的 Swift 版本不同的关系，我遇到了几个问题。书中使用的是 Xco..." />
+    <meta name="keywords" content="Swift,学习,错误记录,Mac" />
   </head>
   <body>
     <div id="app" class="main">
@@ -117,77 +115,106 @@ $/bin/b..." />
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Mac M1 芯片版使用 Brew 的基本教程</h2>
-            <div class="post-date">2021-07-18</div>
-            
-              <div class="feature-container" style="background-image: url('https://cyberdragoncore.github.io/post-images/mac-m1-xin-pian-ban-shi-yong-brew-de-ji-ben-jiao-cheng.png')">
-              </div>
+            <h2 class="post-title">学习 Swift 遇到的小问题</h2>
+            <div class="post-date">2021-10-01</div>
             
             <div class="post-content" v-pre>
-              <p>之前听说在 Mac 上也有包管理器，于是我尝试了一下。其中发现了很多坑，在这里记录下来。</p>
+              <p>最近在学习Swift，学习中我遇到了几个小问题。</p>
 <!-- more -->
-<p>听说最好的包管理器是 Homebrew 。于是我访问了官网进行安装。官网网址是：https://brew.sh/<br>
-官网上有安装的脚本</p>
-<pre><code class="language-bash">$/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
-</code></pre>
-<p>但是这个脚本要使用到 GitHub 的网站，而在国内的环境下就很容易出现各种问题。解决方法之一是使用代理，然后在终端环境中使用 <code>export</code> 命令设置代理。不过后来我看到了清华的一个镜像网站上介绍的方法。网址：https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/<br>
-先设置一下镜像。</p>
-<pre><code class="language-bash">if [[ &quot;$(uname -s)&quot; == &quot;Linux&quot; ]]; then BREW_TYPE=&quot;linuxbrew&quot;; else BREW_TYPE=&quot;homebrew&quot;; fi
-export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;
-export HOMEBREW_CORE_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/${BREW_TYPE}-core.git&quot;
-export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/${BREW_TYPE}-bottles&quot;
-</code></pre>
-<p>然后使用镜像网站的脚本安装 Brew 。</p>
-<pre><code class="language-bash"># 从镜像下载安装脚本并安装 Homebrew / Linuxbrew
-git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
-#下载脚本
-/bin/bash brew-install/install.sh
-#安装
-rm -rf brew-install
-#删除刚才下载的脚本
-</code></pre>
-<p>之后设置环境变量，将 Brew 加入到环境变量中。</p>
-<pre><code class="language-bash">test -r ~/.bash_profile &amp;&amp; echo 'eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;' &gt;&gt; ~/.bash_profile
-#这是对于 bash
-test -r ~/.zprofile &amp;&amp; echo 'eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;' &gt;&gt; ~/.zprofile
-#这是对于 zsh
-</code></pre>
-<p>之后为 Brew 的软件仓库换源。我之前试过不换源，但是速度非常慢。而且不换源会经常中断导致下载失败。但是我在使用了清华的软件仓库镜像之后发现还是经常中断，于是我找到了一个中科大的镜像。参考了网上的这篇文章后将镜像源换成了中科大的。文章网址：https://brew.idayer.com/guide/m1/</p>
-<pre><code class="language-bash"># brew
-git -C &quot;$(brew --repo)&quot; remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+<p>我找到一本《Swift基础教程》的书，正在按照书中的内容学习。这本书的内容很简洁易懂，很适合新手。但是可能由于书中演示的 Swift 版本不同的关系，我遇到了几个问题。书中使用的是 Xcode 6 ，而我使用的版本是 Xcode 13 。</p>
+<h3 id="问题一">问题一</h3>
+<p>书中的提到可以使用 <code>println</code> 函数打印内容。但是我如果使用 <code>println</code> 则会报错。</p>
+<h3 id="问题二">问题二</h3>
+<p>书中有一个示例是这样的</p>
+<pre><code class="language-swift">var speedLimit = 75
+var carSpeed = 0
 
-# core
-git -C &quot;$(brew --repo homebrew/core)&quot; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+while (carSpeed &lt; 100) {
+    carSpeed ++
+    switch carSpeed {
+    case 0..&lt;20:
+        print(&quot;\(carSpeed): You're going really slow&quot;)
+    case 20..&lt;30:
+        print(&quot;\(carSpeed): Pick up the pace&quot;)
+    case 30..&lt;40:
+        print(&quot;\(carSpeed): Tap the accelerator&quot;)
+    case 40..&lt;50:
+        print(&quot;\(carSpeed): Hitting your stride&quot;)
+    case 50..&lt;60:
+        print(&quot;\(carSpeed): Moving at a good clip&quot;)
+    case 60..&lt;70:
+        print(&quot;\(carSpeed): Now you're cruising!&quot;)
+    case 70...speedLimit:
+        print(&quot;\(carSpeed): Warning... approaching the seed limit&quot;)
+    default:
+        print(&quot;\(carSpeed): You're going too fast!&quot;)
+    }
+    if carSpeed &gt; speedLimit {
+        break
+    }
+}
+</code></pre>
+<p>但是这样输入之后在 <code>switch carSpeed {</code> 后面会报错 <code>Expected expression after operator</code> 。同时下面也会有错误提示</p>
+<pre><code>error: Playground.playground:6:5: error: expected expression after operator
+    switch carSpeed {
+    ^
+</code></pre>
+<p>一开始我以为是 <code>switch</code> 用法不对，但是后来才发现这个错误是针对第5行的语句的。将代码改成这样就可以了</p>
+<pre><code class="language-diff">var speedLimit = 75
+var carSpeed = 0
 
-# cask
-git -C &quot;$(brew --repo homebrew/cask)&quot; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
-# 我使用的是 zsh ，所以使用这段脚本。
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles' &gt;&gt; ~/.zprofile
-source ~/.zprofile
-
-# bash 使用下面这段脚本
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles' &gt;&gt; ~/.bash_profile
-source ~/.bash_profile
+while (carSpeed &lt; 100) {
+-    carSpeed ++
++    carSpeed = carSpeed + 1
+    switch carSpeed {
+    case 0..&lt;20:
+        print(&quot;\(carSpeed): You're going really slow&quot;)
+    case 20..&lt;30:
+        print(&quot;\(carSpeed): Pick up the pace&quot;)
+    case 30..&lt;40:
+        print(&quot;\(carSpeed): Tap the accelerator&quot;)
+    case 40..&lt;50:
+        print(&quot;\(carSpeed): Hitting your stride&quot;)
+    case 50..&lt;60:
+        print(&quot;\(carSpeed): Moving at a good clip&quot;)
+    case 60..&lt;70:
+        print(&quot;\(carSpeed): Now you're cruising!&quot;)
+    case 70...speedLimit:
+        print(&quot;\(carSpeed): Warning... approaching the seed limit&quot;)
+    default:
+        print(&quot;\(carSpeed): You're going too fast!&quot;)
+    }
+    if carSpeed &gt; speedLimit {
+        break
+    }
+}
+</code></pre>
+<p>个人认为这是 Swift 为了避免写代码时搞不清楚某个变量的具体变化而引入的机制吧。避免大家在使用某个变量前通过 <code>++</code> 等方式修改变量。如果做一个测试就会发现，为了避免混淆 Swift 中已经不支持 <code>++</code> 和 <code>--</code> 等操作了。如果输入下面的代码</p>
+<pre><code class="language-swift">var i
+i ++
+</code></pre>
+<p>Xcode 会提示</p>
+<pre><code>error: cannot find operator '++' in scope; did you mean '+= 1'?
 </code></pre>
 
             </div>
             
               <div class="tag-container">
                 
+                  <a href="https://cyberdragoncore.github.io/tag/nOHTCpWQq/" class="tag">
+                    Swift
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/sZCbIRQfGU/" class="tag">
+                    学习
+                  </a>
+                
+                  <a href="https://cyberdragoncore.github.io/tag/DsIoT2dpIL/" class="tag">
+                    错误记录
+                  </a>
+                
                   <a href="https://cyberdragoncore.github.io/tag/vWB9XsU_6/" class="tag">
                     Mac
-                  </a>
-                
-                  <a href="https://cyberdragoncore.github.io/tag/0M20WvQ_Ta/" class="tag">
-                    M1
-                  </a>
-                
-                  <a href="https://cyberdragoncore.github.io/tag/G6kzL9zT3S/" class="tag">
-                    Homebrew
-                  </a>
-                
-                  <a href="https://cyberdragoncore.github.io/tag/cmJi7_G4xO/" class="tag">
-                    Brew
                   </a>
                 
               </div>
@@ -195,9 +222,9 @@ source ~/.bash_profile
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://cyberdragoncore.github.io/post/ri-chang-dong-tai/">
+                <a href="https://cyberdragoncore.github.io/post/gang-cai-gei-wo-de-bo-ke-jia-shang-liao-google-analytics/">
                   <h3 class="post-title">
-                    日常动态
+                    刚才给我的博客加上了 Google Analytics 
                   </h3>
                 </a>
               </div>
