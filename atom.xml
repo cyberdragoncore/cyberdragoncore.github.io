@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cyberdragoncore.github.io</id>
     <title>CyberDragonCore的博客</title>
-    <updated>2021-10-01T12:37:08.744Z</updated>
+    <updated>2021-10-01T12:53:08.550Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cyberdragoncore.github.io"/>
     <link rel="self" href="https://cyberdragoncore.github.io/atom.xml"/>
@@ -20,7 +20,7 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>最近在学习Swift，学习中我遇到了几个小问题。</p>
 <!-- more -->
-<p>我找到一本《Swift基础教程》的书，正在按照书中的内容学习。这本书的内容很简洁易懂，很适合新手。但是可能由于书中演示的 Swift 版本不同的关系，我遇到了几个问题。书中使用的是 Xcode 6 ，而我使用的版本是 Xcode 13 。</p>
+<p>我找到一本《Swift基础教程》，正在按照书中的内容学习。这本书的内容很简洁易懂，很适合新手。但是可能由于书中演示的 Swift 版本不同的关系，我遇到了几个问题。书中使用的是 Xcode 6 ，而我使用的版本是 Xcode 13 。</p>
 <h3 id="问题一">问题一</h3>
 <p>书中的提到可以使用 <code>println</code> 函数打印内容。但是我如果使用 <code>println</code> 则会报错。</p>
 <h3 id="问题二">问题二</h3>
