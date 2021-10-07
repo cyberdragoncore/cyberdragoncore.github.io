@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Git 的代理配置 | CyberDragonCore的博客</title>
+<title>Swift 学习笔记 | CyberDragonCore的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -33,8 +33,10 @@
 </script>
 
 
-    <meta name="description" content="Git 是我经常用的软件。出于某些原因我经常要从 GitHub 这些网站上下载文件。但是 Git 不会从终端中继承代理设置。所以我平时用 export 设置的代理就用不上了。之后在网上找了几种给 Git 设置代理的方法。
-git confi..." />
+    <meta name="description" content="最近想学 iOS 开发，但是苦于没有好的入门教程。最近终于在网上找到一个斯坦福的公开课，讲得非常详细。这里做一下笔记。
+
+
+SwiftUI 中的元素会继承更上一层的元素的一些属性。而内部的元素的属性也可以单独设置，并且是内部设置的属性的优先..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -114,37 +116,30 @@ git confi..." />
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Git 的代理配置</h2>
-            <div class="post-date">2021-07-18</div>
+            <h2 class="post-title">Swift 学习笔记</h2>
+            <div class="post-date">2021-10-07</div>
             
             <div class="post-content" v-pre>
-              <p>Git 是我经常用的软件。出于某些原因我经常要从 GitHub 这些网站上下载文件。但是 Git 不会从终端中继承代理设置。所以我平时用 <code>export</code> 设置的代理就用不上了。之后在网上找了几种给 Git 设置代理的方法。</p>
-<pre><code class="language-bash">git config --global http.proxy 'http://192.168.0.1:1080'
-git config --global https.proxy 'http://192.168.0.1:1080'
-</code></pre>
-<p>设置完之后可以使用这个命令查看 Git 的配置。</p>
-<pre><code class="language-bash">git config --list
-</code></pre>
-<p>想退出查看界面的话就按下 <code>Q</code> 键。<br>
-当然还可以使用这个命令直接编辑 Git 的配置文件。</p>
-<pre><code class="language-bash">git config --global --edit
-</code></pre>
-<p>打开配置文件之后会是这样的。</p>
-<pre><code class="language-JSON">[http]
-        proxy = http://192.168.0.1:1080
-[https]
-        proxy = http://192.168.0.1:1080
-</code></pre>
-<p>这里的编辑器应该默认是 Vim ，据说可以根据自己爱好换成其他的编辑器。</p>
+              <p>最近想学 iOS 开发，但是苦于没有好的入门教程。最近终于在网上找到一个斯坦福的公开课，讲得非常详细。这里做一下笔记。</p>
+<!-- more -->
+<p><img src="https://cyberdragoncore.github.io/post-images/1633607711053.png" alt="SwiftUI 中的元素会继承更上一层的元素的一些属性" loading="lazy"><br>
+SwiftUI 中的元素会继承更上一层的元素的一些属性。而内部的元素的属性也可以单独设置，并且是内部设置的属性的优先级更高。这很好理解，毕竟 CSS 这些里面也是一样的道理。</p>
+<p><img src="https://cyberdragoncore.github.io/post-images/1633608204215.png" alt="函数可以使用简略的写法" loading="lazy"><br>
+如果函数只有一个参数，而参数是另一个函数的话。可以省略函数的名字后面的括号，直接跟上 <code>{}</code> 。也可以尽量省略 <code>return</code> 这样的东西，让整个的代码看起来更像是模块化的东西。这样可以像搭积木一样写代码。</p>
+<p><img src="https://cyberdragoncore.github.io/post-images/1633609027492.png" alt="SwiftUI 中创建自己需要的视图元素" loading="lazy"><br>
+通过这样的简单语句就可以在 SwiftUI 中创建自己需要的视图元素，方便开发和调用。不过我还不太懂为什么这些视图都是结构的形式而不是类。</p>
+<p><img src="https://cyberdragoncore.github.io/post-images/1633610138640.png" alt="添加新的预览视图" loading="lazy"><br>
+通过添加一段代码可以增加一个预览视图，同时可以设置新视图的样式。</p>
+<p>在编辑中使用 Ctrl + Command + Space 可以调出表情符号的工具。</p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://cyberdragoncore.github.io/post/mac-m1-xin-pian-ban-shi-yong-brew-de-ji-ben-jiao-cheng/">
+                <a href="https://cyberdragoncore.github.io/post/xue-xi-vim-de-yi-ge-ji-yi-fang-fa/">
                   <h3 class="post-title">
-                    Mac M1 芯片版使用 Brew 的基本教程
+                    学习Vim的一个记忆方法
                   </h3>
                 </a>
               </div>
